@@ -1,0 +1,33 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --size: 1rem;
+  --color: #e5e5e5;
+  --background: #3c3c3c;
+}
+
+body{
+  background: var(--background);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container{
+  width: fit-content;
+  aspect-ratio: 1;
+}
+
+#github{
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  left: calc(-1 *var(--size));
+  filter: drop-shadow(0px 0px 8px black);
+}
